@@ -31,3 +31,23 @@ class TreeInfo:
     def __init__(self, diameter, height):
         self.diameter = diameter
         self.height = height
+
+
+# Test
+#        1
+#      /   \
+#     3     2
+#    / \   / \
+#   7   4 5   6
+#  / \
+# 8   9
+tree = BinaryTree(1)
+tree.left = BinaryTree(3)
+tree.left.left = BinaryTree(7)
+tree.left.left.left = BinaryTree(8)
+tree.left.left.right = BinaryTree(9)
+tree.left.right = BinaryTree(4)
+tree.right = BinaryTree(2)
+tree.right.left = BinaryTree(5)
+tree.right.right = BinaryTree(6)
+print(binaryTreeDiameter(tree))
