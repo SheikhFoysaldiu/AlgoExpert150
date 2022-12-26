@@ -32,15 +32,18 @@ class SuffixTrie:
 # Time Complexity: O(n^2 + m) where n is the length of the input string and m is the length of the query string.
 # Space Complexity: O(n^2) where n is the length of the input string.
 # Test
-#                                  Root
-#                               /   |    \
-#                              b    a     c
-#                             / \  / \   / \
-#                            a   c b   c a   *
-#                           / \   |   |   \
-#                          c   *  *   *   *
-#                         / \
-#                        *   *
+#                                   R   o   o   t
+
+#                             /           |            \
+#                           b             a              c
+#                         /   \           |              |
+#                        a     c          b              *
+#                       /      |          |
+#                      b       *          c
+#                     /                   |
+#                    c                    *
+#                   /                     |
+#                  *                      *                          
 
 string = "babc"
 suffixTrie = SuffixTrie(string)
